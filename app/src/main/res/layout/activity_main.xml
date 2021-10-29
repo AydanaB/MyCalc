@@ -8,6 +8,17 @@
     tools:context=".MainActivity"
     tools:ignore="MissingClass">
 
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Send Result"
+        android:onClick="publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <FrameLayout
         app:layout_constraintBottom_toTopOf="@+id/container"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,7 +40,6 @@
             android:text="@string/textView_0"
             android:layout_width="wrap_content"
             android:layout_height="120dp"/>
-
 
     </FrameLayout>
 
